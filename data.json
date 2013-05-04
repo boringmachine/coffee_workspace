@@ -1,0 +1,37 @@
+{
+    "boss": {
+	"id"    : "boss",
+	"x"     :    300,
+	"y"     :    100,
+	"degree":      0,
+	"power" :      9,
+	"colors": [
+	    {"color":"blue"},{"color":"green"},{"color":"yellow"},
+	    {"color":"lime"},{"color":"red"  },{"color":"white" },
+	    {"color":"gray"},{"color":"black"},{"color":"orange"}
+	]
+    },
+
+    "fighter": {
+	"id": "fighter",
+	"x" :         0,
+	"y" :       100
+    },
+
+    "beam": {
+	"id"    : "beam",
+	"x"     :      0,
+	"y"     :      2,
+	"flag"  :  false,
+	"limitX":    400
+    },
+    
+    "tama": {
+	"id"    : "tama",
+	"x"     :      0,
+	"y"     :      0,
+	"dy"    :      0,
+	"degree":      0,
+	"flag"  :  false
+    }
+}

@@ -1,0 +1,40 @@
+@import "mixins";
+
+$middle_height: 450px;
+$middle_width: 500px;
+$middle_padding: 10px;
+
+@mixin packSVG($border, $background){
+    border: $border;
+    background: $background;    
+}
+
+body{
+    background: #EEF;
+    color: black + #333;
+}
+
+#page{
+    header h1{
+	text-align: center;
+    }
+}
+
+#hit{
+    font-size: 30px;
+}
+
+#game{
+    width: $middle_width;
+    position: relative;
+    padding: $middle_padding;
+    height: $middle_height;
+    background: gray + #22F;
+    float:left;
+    margin-left: $middle_width/2;
+    text-align: center;
+}
+
+#svgobj{
+    @include packSVG(1px solid black,#AFA);
+}

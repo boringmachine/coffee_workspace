@@ -1,0 +1,54 @@
+@mixin navigation_bar(
+    $lcolor:white,
+    $gbcolor:rgb(125,126,125),
+    $gtcolor:rgb(14,14,14)
+){
+    nav {
+	height: 34px;
+	$x: $gbcolor;
+	$y: $gtcolor;
+	background: ($x+$y)/2;
+	@include background-gradient($x,$y);
+	@include border-radius(6px);
+	
+	ul{
+            padding: 5px;
+            li{
+		padding: 3px 3px 3px 3px;
+    		display: inline;
+		border-right: 1px solid #888;
+		@include link_color($lcolor);
+            }
+	}
+    }
+}
+
+@mixin link_color($x){
+    a{
+	color: $x;
+    }
+}
+
+@mixin border-radius($x){
+    -moz-border-radius: $x;
+    -webkit-border-radius: $x;
+    border-radius: $x;
+}
+
+@mixin transform($x){
+    -moz-transform: $x;
+    -webkit-transform: $x;
+    transform: $x;
+}
+
+@mixin box-shadow($x){
+    -moz-box-shadow: $x;
+    -webkit-box-shadow: $x;
+    box-shadow: $x;
+}
+
+@mixin background-gradient($x,$y){
+    background: -moz-linear-gradient(top, $x 0%, $y 100%);
+    background: -webkit-linear-gradient(top, $x 0%,$y 100%);
+    background: linear-gradient(to bottom, $x 0%,$y 100%);
+}

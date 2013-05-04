@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html> 
+  <head> 
+    <meta charset="UTF-8" /> 
+    <title>JavaScriptでSVGゲーム</title> 
+    <link rel="stylesheet" href="style.css" type="text/css" />
+    <script type="text/javascript" src="jquery-1.9.0.min.js"></script>
+    <script type="text/javascript" src="gameFunctions.js"></script>
+  </head> 
+  <body>
+    <section id="page">
+      <header>
+	  <h1>SVG Game</h1>
+      </header>
+      
+      <section id="game">
+	<header>
+	  <h3>A:上,Z:下,マウスクリック:ビーム</h3>
+	</header>
+	<p>敵HP:<span id="hit" >?</span><button type="button" id="gameStart">ゲームスタート</button></p>
+	<svg id="svgobj" width="400" height="300" >
+	  <g id="fighter">
+	    <polygon display="inline" 
+		     fill="#231815" 
+		     points="39.473,14.667 37.806,12.667 29.034,12.228 25.473,8.667 13.227,8.667 
+			     10.473,2.333 5.473,0 5.473,8.667 0,8.667 2.139,12.333 4.473,12.333 4.473,14.667     "/>
+	  </g>
+	  <path id="boss" 
+		display="inline" 
+		fill="#888888" 
+		d="M0,0v53h11.333v18.333H0v13h60V0H0z M11.5,21.333c-1.563,0-2.833-2.239-2.833-5
+		   s1.27-5,2.833-5c1.565,0,2.833,2.239,2.833,5S13.065,21.333,11.5,21.333z"/>
+	  <g id="tama">
+	    <path 
+	       display="inline" 
+	       fill="#00CD00" 
+	       d="M20.307,3.778c0,2.209-2.807,4-7.5,4c-4.694,0-12.167-1.791-12.167-4s7.472-4,12.167-4
+		  C17.502-0.222,20.307,1.569,20.307,3.778z"/>
+	  </g>
+	  <g id="beam">
+	    <rect x="0" fill="#FF0000" width="20" height="3"/>
+	  </g>
+	</svg>
+
+      </section>
+    </section>
+  </body> 
+</html> 

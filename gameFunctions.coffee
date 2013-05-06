@@ -130,7 +130,7 @@ $.getJSON "data.json",(o)->
 
 	$.getJSON "setting.json",(o)->
 			
-		$btn = $("#" + o.basic.id).click ->
+		$btn = $("##{o.basic.id}").click ->
 			$(@).hide()
 		
 		runner.setGameEvents(o.basic)

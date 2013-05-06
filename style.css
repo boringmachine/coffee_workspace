@@ -2,20 +2,20 @@ body {
   background: #EEF;
   color: #333333; }
 
-#page header h1 {
-  text-align: center; }
+#page {
+  width: 550px;
+  margin-left: auto;
+  margin-right: auto; }
+  #page header h1 {
+    text-align: center; }
 
 #hit {
   font-size: 30px; }
 
 #game {
   width: 500px;
-  position: relative;
-  padding: 10px;
   height: 450px;
   background: #a2a2ff;
-  float: left;
-  margin-left: 250px;
   text-align: center; }
 
 #svgobj {

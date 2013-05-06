@@ -15,9 +15,12 @@ body{
 }
 
 #page{
+    width: $middle_width+50;
     header h1{
 	text-align: center;
     }
+    margin-left :auto;
+    margin-right:auto;
 }
 
 #hit{
@@ -26,12 +29,8 @@ body{
 
 #game{
     width: $middle_width;
-    position: relative;
-    padding: $middle_padding;
     height: $middle_height;
     background: gray + #22F;
-    float:left;
-    margin-left: $middle_width/2;
     text-align: center;
 }
 
